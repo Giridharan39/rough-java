@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("enter size :");
+        String t1=obj.nextLine();
+        int length = Integer.valueOf(t1);
+        for(int i=1;i<=length;i++) {
+            for (int j=1;j<=i;j++){
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
+}

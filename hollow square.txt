@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("enter size :");
+        String t1=obj.nextLine();
+        int length = Integer.valueOf(t1);
+        for(int i=1;i<=length;i++){
+            if (i==1 || i==length){
+                for (int j=0;j<length;j++){
+                    System.out.print("*");
+                }
+            }
+            else{
+                System.out.print("*");
+                for (int j=0;j<length-2;j++){
+                    System.out.print(" ");
+                }
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
