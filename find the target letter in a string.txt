@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.print("enter the string :");
+        String name = obj.nextLine();
+        System.out.println("enter the character :");
+        String character = obj.nextLine();
+        int index=0;
+        for (int i=0;i<name.length();i++){
+            if (name.charAt(i)==character.charAt(0)){
+                System.out.println(character+"is found in index "+i);
+            }
+        }
+
+    }
+}
