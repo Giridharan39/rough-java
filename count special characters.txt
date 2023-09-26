@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.print("enter the string :");
+        String name = obj.nextLine();
+        byte c=0;
+        System.out.print("the special characters are :");
+        for (int i=0;i<name.length();i++){
+            if (Character.isAlphabetic(name.charAt(i))||Character.isDigit(name.charAt(i))||Character.isWhitespace(name.charAt(i))){
+                continue;
+            }
+            else {
+                c++;
+                System.out.print(name.charAt(i) + " ");
+            }
+        }
+        System.out.println();
+        System.out.println("the number of special character is :"+c);
+
+
+    }
+}
